@@ -191,6 +191,7 @@ h3{
 }
 .artworks-page{
   position: relative;
+  left: 30px;
 }
 .textbox-contact{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
