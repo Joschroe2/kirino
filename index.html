@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- connects to the .css and .js data-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>KiRino</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+</head>
+
+
+<body> 
+
+    <!-- constructor for nav-bar -->
+    <nav>
+        <!-- menu nav-bar -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick=showHome()><a href="#">Home</a></li>
+            <li onclick=showBlog()><a href="#">Blog</a></li>
+            <li onclick=showArtworks()><a href="#">Artworks</a></li>
+            <li onclick=showAbout()><a href="#">About</a></li>
+            <li><a href="https://github.com/Joschroe2?tab=repositories">Code</a></li>
+        </ul>
+        <!-- standard nav_bar-->
+        <ul>
+            <li><a href="#">KiRino</a></li>
+            <li class="hideOnMobile" onclick=showHome()><a href="#">Home</a></li>
+            <li class="hideOnMobile" onclick=showBlog()><a href="#">Blog</a></li>
+            <li class="hideOnMobile" onclick=showArtworks()><a href="#">Artworks</a></li>
+            <li class="hideOnMobile" onclick=showAbout()><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="https://github.com/Joschroe2?tab=repositories">Code</a></li>
+            <li onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+        </ul>
+    </nav>
+
+    
+    <!-- constructor for main-page -->
+    <div class="main-page">
+        <div class="main-page-image">
+            <h3>Welcome on</h3>
+            <h3>KiRino</h3>
+        </div>
+    </div>
+
+    <!-- constructor for the home-page -->
+    <div class="home-page" hidden>
+        <!-- creates a box with text in it -->
+        <div class="card">
+            <h1 class="headline">About me</h1>
+        
+            <!-- example text -->
+            <p>I am Kira, a 15yo programmer and my goal is to master different programming
+                languages like for example Java, HTML, CSS, JS and so on. I'm very motivated
+                to reach my goals.</p>
+        </div>
+        <!-- end of card -->
+
+        <!-- generates a text-box with links -->
+        <div class="textbox-home">
+            <h2>Home</h2>
+            <article>
+                here you can find different projects or information about me.
+            </article>
+            <ul class="home-content-links">
+                <li onclick=showBlog()><a href="#">Blog</a></li>
+                <li><a href="#" onclick=showArtworks()>Artworks</a></li>
+                <li onclick=showAbout()><a href="#">About</a></li>
+                <li><a href="https://github.com/Joschroe2?tab=repositories">Code</a></li>
+            </ul>   
+        </div>
+        <!-- end of text-box generator-->
+    </div>
+    
+    <!-- constructor for about-page -->
+     <div class="about-page" hidden>
+        <div class="textbox-about">
+            <h2>About</h2>
+            <article>
+                My name is Kira, not officially, because I am a trans-girl.
+                I like programming very much and hope to work at 8mylez in Paderborn
+                one day and learn a lot of cool stuff about programming there. Also I
+                like playing the electric guitar very much and learn a lot in my free-time.
+                One day I want to master several programming-languages such as Java, HTML, CSS,
+                JS, PHP and SQL, to be able to do as much as possible on my PC.
+            </article>
+            <article>
+                I'm very motivated to learn more about programming stuff and learning in
+                more in general. 
+            </article>
+        </div>
+     </div>
+
+    <!-- constructor for blog-page -->
+    <div class="blog-page" hidden>
+        <div class="textbox-blog">
+            <h2>Blog</h2>
+            <article>
+                This is a blog-page.
+            </article>
+            <a href="https://archiveofourown.org/works/55839478">the good stuff mad by Aria</a>
+        </div>
+    </div>
+
+    <!-- constructor for artworks-page-->
+    <div class="artworks-page" hidden>
+        <h2>Artworks</h2>
+        
+    </div>
+
+
+</body>
+<!-- I need E -->
+</html>
